@@ -45,8 +45,14 @@ Please reach out to us directly through GitHub with any questions, comments, or 
 
 ##### v1.0.1 - add project assets
 
-##### v1.0.2 - add project structure
+##### v1.0.2 - create project scaffolding
 
 #### v1.1 - Phase One
 
-##### v1.1.1 - create main component styles
+##### v1.1.1 - create main component style rules
+
+##### v1.1.2 - add content for project template
+
+#### v1.2 - Phase Two
+
+##### v1.2.1 - create test cases for project
