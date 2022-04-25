@@ -23,6 +23,7 @@ Please reach out to us directly through GitHub with any questions, comments, or 
 
 ## Architecture
 
+
 ### Version Zero
 
 
@@ -30,16 +31,22 @@ Please reach out to us directly through GitHub with any questions, comments, or 
 
 ##### v0.0.1 - create new repo for project
 
-
 #### v0.1 - Phase One
 
 ##### v0.1.1 - create new Vue PWA project
 
 ##### v0.1.2 - remove all defaults from project
 
+
 ### Version One
 
 
 #### v1.0 - Phase Zero
 
-##### v1.0.1 - create first view in SSPWA
+##### v1.0.1 - add project assets
+
+##### v1.0.2 - add project structure
+
+#### v1.1 - Phase One
+
+##### v1.1.1 - create main component styles
