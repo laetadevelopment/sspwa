@@ -1,6 +1,6 @@
 {
-  "name": "sspwa",
-  "version": "1.0.1",
+  "name": "SSPWA",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
