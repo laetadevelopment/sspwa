@@ -1,5 +1,5 @@
 # SSPWA
- Single Screen Progressive Web App
+ [Single Screen Progressive Web App](https://sspw.app "Interact with the SSPWA Template")
 
 
 

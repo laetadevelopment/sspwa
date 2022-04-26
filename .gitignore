@@ -139,3 +139,9 @@ dist
 
 # MacOS Finder file
 .DS_Store
+
+# Deployment files
+.firebase/
+firebase.json
+.firebaserc
+.github/
