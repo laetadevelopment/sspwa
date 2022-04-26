@@ -1,32 +1,57 @@
 <template>
-  <div>
-    
+  <div id="sspwa">
+    <div id="content">
+      <div>
+        <img @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'SSPWA',
+  data() {
+    return {
+      deferredPrompt: null
+    }
+  },
+  created() {
+    window.addEventListener("beforeinstallprompt", e => {
+      e.preventDefault();
+      this.deferredPrompt = e;
+    });
+    window.addEventListener("appinstalled", () => {
+      this.deferredPrompt = null;
+    });
+  },
+  methods: {
+    async install() {
+      this.deferredPrompt.prompt();
+    }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+#sspwa {
+  width:  100%;
+  height:  100%;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+#content {
+  width: 100%;
+  height: 100%;
+  border: 15px solid #0E5FF2;
+  box-sizing: border-box;
+  background: #FFFFFF;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+#logo {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 </style>

@@ -14,7 +14,21 @@ export default {
 </script>
 
 <style>
+html {
+  width:  100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+body {
+  width:  100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  margin: 0;
+}
 #app {
-  
+  width:  100%;
+  height:  100%;
+  overflow: hidden !important;
+  background: #0E5FF2;
 }
 </style>
