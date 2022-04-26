@@ -55,4 +55,14 @@ Please reach out to us directly through GitHub with any questions, comments, or 
 
 #### v1.2 - Phase Two
 
-##### v1.2.1 - create test cases for project
+##### v1.2.1 - create CI/CD pipeline for project
+
+##### v1.2.2 - create test cases for project
+
+##### v1.2.3 - create documentation for project
+
+#### v1.3 - Phase Three
+
+##### v1.3.1 - add scaffolding for notifications
+
+##### v1.3.2 - create UI/UX for notifications
