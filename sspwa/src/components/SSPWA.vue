@@ -27,7 +27,6 @@ export default {
   },
   methods: {
     async install() {
-      console.log('test');
       this.deferredPrompt.prompt();
     }
   }
@@ -40,19 +39,19 @@ export default {
   height:  100%;
 }
 #content {
-  width: 90%;
-  height: 90%;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  width: 100%;
+  height: 100%;
+  border: 15px solid #0E5FF2;
+  box-sizing: border-box;
   background: #FFFFFF;
 }
 #logo {
   max-width: 50%;
   max-height: 50%;
   position: absolute;
-  left: 25%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 </style>
