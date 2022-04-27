@@ -5,7 +5,7 @@
 
 ## Mission
 
-> To create a new, open source progressive web app experience that feels like interacting with a movie.
+> To create a progressive web app experience that feels like interacting with a movie.
 
 
 
