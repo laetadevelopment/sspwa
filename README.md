@@ -17,7 +17,7 @@ To add to the movie experience a SSPWA will allow you to interact with the eleme
 
 Unlike a traditional PWA (Progressive Web App) or web application in general, the elements on the screen will never exist outside of the screen view. This makes a modern, component based framework like Vue.js ideal to build and manage your SSPWAs. End the endless scrolling of apps and websites today and build the ultimate movie/game/app hybrid of the future!
 
-Please reach out to us directly through GitHub with any questions, comments, or bug reports.
+Please reach out directly through GitHub with any questions, comments, or bug reports.
 
 
 
