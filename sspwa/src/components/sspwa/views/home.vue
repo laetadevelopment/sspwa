@@ -1,5 +1,5 @@
 <template>
-  <div v-if="showHome" id="home">
+  <div v-if="showHome" id="home" class="page">
     <div class="page-title">
       <h1>Single Screen Progressive Web App</h1>
     </div>
@@ -7,8 +7,8 @@
       <p>The mission of SSPWA (Single Screen Progressive Web App) is to create a progressive web app experience that feels like interacting with a movie.</p>
     </div>
     <div class="page-cta">
-      <button @click="view" class="page-cta bottom-left">View on GitHub</button>
-      <button @click="load" class="page-cta bottom-right">Learn More</button>
+      <button @click="view" class="bottom-left">View on GitHub</button>
+      <button @click="load" class="bottom-right">Learn More</button>
     </div>
   </div>
 </template>

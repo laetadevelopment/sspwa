@@ -1,12 +1,12 @@
 <template>
   <div id="index">
-    <appHeader @toggle="toggle" @load="load" />
+    <appHeader @load="load" @toggle="toggle" />
     <main>
       <!-- app views go here -->
       <home v-if="showHome" @load="load" />
-      <learnMore v-if="showLearnMore" @load="load" />
+      <learnMore v-if="showLearnMore" @load="load" @toggle="toggle" />
     </main>
-    <appMenu v-if="showAppMenu" />
+    <appMenu v-if="showAppMenu" @load="load" @toggle="toggle" />
     <appBar v-if="showAppBar" />
   </div>
 </template>
@@ -66,3 +66,38 @@ export default {
   }
 }
 </script>
+
+<style>
+#index {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main {
+  width: 100% !important;
+  height: 80% !important;
+  overflow: hidden !important;
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.page {
+  padding: 20px;
+}
+.page-title {
+  display: flex;
+  justify-content: center;
+}
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-cta {
+  display: flex;
+  justify-content: space-between;
+}
+.page-cta button {
+  display: inline-flex;
+  align-items: center;
+}
+</style>

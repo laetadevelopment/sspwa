@@ -1,5 +1,5 @@
 <template>
-  <div v-if="showLearnMore" id="learnMore">
+  <div v-if="showLearnMore" id="learnMore" class="page">
     <div class="page-title">
       <h1>Learn More About SSPWA</h1>
     </div>
@@ -11,8 +11,8 @@
       <p>Documentation and more info for the SSPWA Template is coming soon!</p>
     </div>
     <div class="page-cta">
-      <button @click="view" class="page-cta bottom-left">View on GitHub</button>
-      <button @click="load" class="page-cta bottom-right">Go Home</button>
+      <button @click="view" class="bottom-left">View on GitHub</button>
+      <button @click="load" class="bottom-right">Go Home</button>
     </div>
   </div>
 </template>
