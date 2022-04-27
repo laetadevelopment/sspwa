@@ -5,7 +5,7 @@
       <button v-if="showAppMenu" @click="hideMenu">Hide Menu</button>
     </div>
     <div id="logo">
-      <img alt="SSPWA logo" src="../../assets/logo.png">
+      <img @click="home" alt="SSPWA logo" src="../../assets/logo.png">
     </div>
     <div id="appBarButtons">
       <button v-if="!showAppBar" @click="showBar">Show App Bar</button>
@@ -32,6 +32,9 @@ export default {
       this.showAppMenu = false;
       this.$emit("toggle", "appMenu");
     },
+    home() {
+      this.$emit("load", "home");
+    },
     showBar() {
       this.showAppBar = true;
       this.$emit("toggle", "appBar");
@@ -48,5 +51,6 @@ export default {
 header #logo img {
   max-width: 10%;
   max-height: 10%;
+  cursor: pointer;
 }
 </style>

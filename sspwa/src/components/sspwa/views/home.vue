@@ -23,8 +23,7 @@ export default {
   },
   methods: {
     view() {
-      this.$emit("load", "menu");
-      //window.open('https://github.com/laetadevelopment/sspwa','_blank');
+      window.open('https://github.com/laetadevelopment/sspwa','_blank');
     },
     load() {
       this.$emit("load", "learnMore");

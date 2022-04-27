@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <appHeader @toggle="toggle" />
+    <appHeader @toggle="toggle" @load="load" />
     <main>
       <!-- app views go here -->
       <home v-if="showHome" @load="load" />
@@ -62,7 +62,6 @@ export default {
         this.showHome = false;
         this.showLearnMore = true;
       }
-      console.log(page);
     }
   }
 }
