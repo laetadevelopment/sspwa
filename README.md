@@ -49,9 +49,11 @@ Please reach out to us directly through GitHub with any questions, comments, or 
 
 #### v1.1 - Phase One
 
-##### v1.1.1 - create main component style rules
+##### v1.1.1 - add content for project template
 
-##### v1.1.2 - add content for project template
+##### v1.1.2 - style content for project template
+
+##### v1.1.3 - create remaining style rules for main component
 
 #### v1.2 - Phase Two
 
