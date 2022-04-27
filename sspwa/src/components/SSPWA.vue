@@ -1,7 +1,7 @@
 <template>
   <div id="sspwa">
     <div id="content">
-      <div>
+      <div class="viewable">
         <img @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
       </div>
     </div>
@@ -43,6 +43,12 @@ export default {
   height: 100%;
   border: 20px solid #0E5FF2;
   box-sizing: border-box;
+}
+.viewable {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
   background: #FFFFFF;
 }
 #logo {
