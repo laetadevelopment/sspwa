@@ -1,33 +1,48 @@
 <template>
   <div id="sspwa">
     <div id="content">
-      <div class="viewable">
-        <img @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
+      <div id="viewable">
+        <div v-if="showInstall" id="intro">
+          <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
+          <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.png">
+        </div>
+        <index v-if="loadIndex" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import index from './sspwa/index.vue'
+
 export default {
   name: 'SSPWA',
+  components: {
+    index
+  },
   data() {
     return {
-      deferredPrompt: null
+      installApp: null,
+      showInstall: true,
+      loadIndex: false
     }
   },
   created() {
     window.addEventListener("beforeinstallprompt", e => {
       e.preventDefault();
-      this.deferredPrompt = e;
+      this.installApp = e;
     });
     window.addEventListener("appinstalled", () => {
-      this.deferredPrompt = null;
+      this.installApp = null;
     });
   },
   methods: {
     async install() {
-      this.deferredPrompt.prompt();
+      this.installApp.prompt();
+    },
+    load() {
+      this.showInstall = false;
+      this.loadIndex = true;
     }
   }
 }
@@ -35,8 +50,8 @@ export default {
 
 <style scoped>
 #sspwa {
-  width:  100%;
-  height:  100%;
+  width: 100%;
+  height: 100%;
 }
 #content {
   width: 100%;
@@ -44,14 +59,14 @@ export default {
   border: 20px solid #0E5FF2;
   box-sizing: border-box;
 }
-.viewable {
+#viewable {
   width: 100%;
   height: 100%;
   overflow: hidden;
   border-radius: 15px;
   background: #FFFFFF;
 }
-#logo {
+#intro #logo {
   max-width: 50%;
   max-height: 50%;
   position: absolute;
