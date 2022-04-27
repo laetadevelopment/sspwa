@@ -41,7 +41,7 @@ export default {
 #content {
   width: 100%;
   height: 100%;
-  border: 15px solid #0E5FF2;
+  border: 20px solid #0E5FF2;
   box-sizing: border-box;
   background: #FFFFFF;
 }
