@@ -189,7 +189,7 @@ button {
   font-size: 4.75vw;
 }
 .page-content {
-  height: 75%;
+  height: 77.5%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
