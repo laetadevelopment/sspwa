@@ -1,8 +1,8 @@
 <template>
   <div id="appBar">
-    <a class="github-button" href="https://github.com/laetadevelopment/sspwa/subscription" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch laetadevelopment/sspwa on GitHub">Watch</a>
-    <a class="github-button" href="https://github.com/laetadevelopment/sspwa" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star the SSPWA Template on GitHub">Star</a>
-    <a class="github-button" href="https://github.com/laetadevelopment/sspwa/archive/HEAD.zip" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-download" data-size="large" aria-label="Download laetadevelopment/sspwa on GitHub">Download</a>
+    <a class="github-button" href="https://github.com/laetadevelopment/sspwa/subscription" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch laetadevelopment/sspwa on GitHub">Watch</a>
+    <a class="github-button" href="https://github.com/laetadevelopment/sspwa" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star the SSPWA Template on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/laetadevelopment/sspwa/archive/HEAD.zip" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-download" data-size="large" aria-label="Download laetadevelopment/sspwa on GitHub">Download</a>
   </div>
 </template>
 
@@ -25,7 +25,6 @@ export default {
 #appBar {
   width: 100%;
   height: 10%;
-  min-height: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

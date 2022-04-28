@@ -1,13 +1,13 @@
 <template>
   <div id="sspwa">
-    <div id="content">
-      <div id="viewable">
-        <div v-if="showInstall" id="intro">
-          <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
-          <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
-        </div>
-        <index v-if="loadIndex" />
+    <div id="viewable">
+      <div v-if="showInstall" id="intro">
+        <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
+        <h2 v-if="installApp">Install SSPWA</h2>
+        <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
+        <h2 v-if="!installApp">Load SSPWA</h2>
       </div>
+      <index v-if="loadIndex" />
     </div>
   </div>
 </template>
@@ -53,14 +53,17 @@ export default {
   width: 100%;
   height: 100%;
 }
-#content {
-  width: 100%;
-  height: 100%;
-}
 #viewable {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+#intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 #intro #logo {
   max-width: 50%;

@@ -1,13 +1,13 @@
 <template>
   <header>
     <div id="menuButton">
-      <button class="background-animation" @click="toggleAppMenu">Show Menu</button>
+      <button class="background-animation" @click="toggleAppMenu" />
     </div>
     <div id="logo">
       <img @click="home" alt="SSPWA logo" src="../../assets/logo.svg">
     </div>
     <div id="appBarButton">
-      <button class="background-animation" @click="toggleAppBar">Show App Bar</button>
+      <button class="background-animation" @click="toggleAppBar" />
     </div>
   </header>
 </template>
@@ -31,33 +31,28 @@ export default {
 
 <style scoped>
 header {
-  width: 100% !important;
-  height:  15% !important;
-  overflow: hidden !important;
+  width: 100%;
+  height:  15%;
   position: relative;
 }
 #menuButton {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 10px;
+  top: 10px;
 }
 #menuButton button {
   width: 100%;
   height: 100%;
-  font-size: 0;
+  border-radius: 40px;
 }
 header #logo {
-  width: 20%;
-  height: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 5px;
+  transform: translate(-50%, 0%);
   cursor: pointer;
 }
 header #logo img {
@@ -68,12 +63,12 @@ header #logo img {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
 }
 #appBarButton button {
   width: 100%;
   height: 100%;
-  font-size: 0;
+  border-radius: 40px;
 }
 </style>

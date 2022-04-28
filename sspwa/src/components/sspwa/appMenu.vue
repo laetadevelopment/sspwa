@@ -34,7 +34,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  bottom: 10%;
+  top: 15%;
   background: rgba(0,0,0,90%);
   border-top: 2px solid rgb(0,0,0);
   box-sizing: border-box;

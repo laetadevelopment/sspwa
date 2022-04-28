@@ -86,9 +86,9 @@ export default {
   font-style: normal;
 }
 main {
-  width: 100% !important;
-  height: 75% !important;
-  overflow: hidden !important;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
   display: flex;
 }
 h1, h2, h3 {
@@ -175,11 +175,16 @@ button {
   }
 }
 .page {
-  margin: 20px;
+  margin: 10px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  overflow: hidden;
 }
 .page-title {
-  height: 7.5%;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -188,11 +193,8 @@ button {
   font-size: 4.75vw;
 }
 .page-content {
-  height: 80%;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
 }
 .page-content h2 {
   font-size: 1em;
