@@ -27,11 +27,12 @@ export default {
   height: 10%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   position: absolute;
   bottom: 0;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgba(62, 140, 132, 75%);
+  background: rgba(62, 140, 132, 50%);
 }
 #appBar span {
   display: inline-flex;
