@@ -9,8 +9,8 @@
       <p>Please reach out directly through GitHub with any questions, comments, or bug reports.</p>
     </div>
     <div class="page-cta">
-      <button @click="view" class="bottom-left">View on GitHub</button>
-      <button @click="load" class="bottom-right">Go Home</button>
+      <button @click="view">View on GitHub</button>
+      <button @click="load">Go Home</button>
     </div>
   </div>
 </template>

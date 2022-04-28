@@ -32,7 +32,7 @@ export default {
       showHome: true,
       showLearnMore: false,
       showAppMenu: false,
-      showAppBar: false
+      showAppBar: true
     }
   },
   methods: {
@@ -78,14 +78,36 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
+  font-family: oswald, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 main {
   width: 100% !important;
-  height: 85% !important;
+  height: 75% !important;
   overflow: hidden !important;
   display: flex;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+}
+h1, h2, h3 {
+  font-family: raleway-v20-deprecated, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 10px;
+}
+button {
+  border: 3px solid black;
+  border-radius: 10px;
+  background: transparent;
+  font-weight: bold;
+}
+.page {
+  margin: 20px;
 }
 .page-title {
   height: 10%;
@@ -105,11 +127,7 @@ main {
   align-content: center;
 }
 .page-content h2 {
-  margin: 0;
   font-size: 1em;
-}
-.page-content p {
-  margin: 0;
 }
 .page-cta {
   height: 10%;
@@ -120,12 +138,11 @@ main {
 .page-cta button {
   width: 150px;
   max-width: 47.5%;
-  height: 50px;
   max-height: 100%;
+  padding: 10px 15px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
   text-align: center;
 }
 </style>

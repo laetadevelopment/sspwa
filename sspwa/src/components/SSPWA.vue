@@ -56,14 +56,11 @@ export default {
 #content {
   width: 100%;
   height: 100%;
-  border: 20px solid transparent;
-  box-sizing: border-box;
 }
 #viewable {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 15px;
 }
 #intro #logo {
   max-width: 50%;
