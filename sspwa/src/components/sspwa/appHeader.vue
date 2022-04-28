@@ -33,7 +33,6 @@ export default {
 header {
   width: 100% !important;
   height:  15% !important;
-  min-height: 80px;
   overflow: hidden !important;
   position: relative;
   border-top-left-radius: 15px;

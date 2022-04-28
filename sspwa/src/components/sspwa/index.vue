@@ -99,27 +99,36 @@ main {
 }
 .page-title h1 {
   margin: 0;
-  font-size: 5vw;
+  font-size: 4.75vw;
 }
 .page-content {
   height: 80%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
 }
 .page-content h2 {
-  font-size: 3vw;
+  margin: 0;
+  font-size: 1em;
+}
+.page-content p {
+  margin: 0;
 }
 .page-cta {
   height: 10%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .page-cta button {
+  width: 150px;
+  height: 50px;
+  max-height: 100%;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
   border-radius: 5px;
+  text-align: center;
 }
 </style>
