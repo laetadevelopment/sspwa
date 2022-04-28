@@ -107,6 +107,9 @@ a {
   color: rgb(14,95,242);
   text-decoration: none;
 }
+a:hover {
+  color: rgba(14,95,242,75%);
+}
 button {
   width: 150px;
   border-radius: 10px;
@@ -121,6 +124,11 @@ button {
   background: rgba(14,95,242,90%);
   color: rgb(255,255,255);
   animation: background 10s infinite alternate;
+}
+.background-animation:hover {
+  border: 3px solid rgb(14,95,242);
+  background: rgba(14,95,242,75%);
+  animation: bghover 10s infinite alternate;
 }
 @keyframes background {
   0% {
@@ -142,6 +150,28 @@ button {
   100% {
     border-color: rgb(62,140,132);
     background: rgba(62,140,132,90%);
+  }
+}
+@keyframes bghover {
+  0% {
+    border-color: rgb(14,95,242);
+    background: rgba(14,95,242,75%);
+  }
+  25% {
+    border-color: rgb(255,151,119);
+    background: rgba(255,151,119,75%);
+  }
+  50% {
+    border-color: rgb(186,220,221);
+    background: rgba(186,220,221,75%);
+  }
+  75% {
+    border-color: rgb(92,158,167);
+    background: rgba(92,158,167,75%);
+  }
+  100% {
+    border-color: rgb(62,140,132);
+    background: rgba(62,140,132,75%);
   }
 }
 .page {
