@@ -111,9 +111,6 @@ main {
 .page-content h2 {
   font-size: 3vw;
 }
-.page-content p {
-  font-size: 2vw;
-}
 .page-cta {
   height: 10%;
   display: flex;
