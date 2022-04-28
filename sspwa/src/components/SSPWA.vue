@@ -3,8 +3,8 @@
     <div id="content">
       <div id="viewable">
         <div v-if="showInstall" id="intro">
-          <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
-          <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.png">
+          <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
+          <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
         </div>
         <index v-if="loadIndex" />
       </div>

@@ -1,13 +1,13 @@
 <template>
   <header>
     <div id="menuButton">
-      <button @click="toggleAppMenu">Show Menu</button>
+      <button class="background-animation" @click="toggleAppMenu">Show Menu</button>
     </div>
     <div id="logo">
-      <img @click="home" alt="SSPWA logo" src="../../assets/logo.png">
+      <img @click="home" alt="SSPWA logo" src="../../assets/logo.svg">
     </div>
     <div id="appBarButton">
-      <button @click="toggleAppBar">Show App Bar</button>
+      <button class="background-animation" @click="toggleAppBar">Show App Bar</button>
     </div>
   </header>
 </template>
@@ -58,7 +58,6 @@ header #logo {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   cursor: pointer;
 }
 header #logo img {

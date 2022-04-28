@@ -2,12 +2,13 @@
   <div id="index">
     <appHeader @load="load" @toggle="toggle" />
     <main>
-      <!-- app views go here -->
+      <!-- load app views -->
       <home v-if="showHome" @load="load" />
       <learnMore v-if="showLearnMore" @load="load" @toggle="toggle" />
     </main>
     <appMenu v-if="showAppMenu" @load="load" @toggle="toggle" />
     <appBar v-if="showAppBar" />
+    <appFooter />
   </div>
 </template>
 
@@ -15,6 +16,7 @@
 import appHeader from './appHeader.vue'
 import home from './views/home.vue'
 import learnMore from './views/learnMore.vue'
+import appFooter from './appFooter.vue'
 import appMenu from './appMenu.vue'
 import appBar from './appBar.vue'
 
@@ -24,6 +26,7 @@ export default {
     appHeader,
     home,
     learnMore,
+    appFooter,
     appMenu,
     appBar
   },
@@ -100,17 +103,26 @@ p {
   margin: 0;
   margin-bottom: 10px;
 }
+a {
+  color: rgb(14,95,242);
+  text-decoration: none;
+}
 button {
   width: 150px;
-  border: 3px solid rgb(14,95,242);
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 3px solid rgb(0,0,0);
   background: transparent;
-  color: rgb(255,255,255);
+  color: rgb(0,0,0);
   font-weight: bold;
   cursor: pointer;
-  animation: button 10s infinite alternate;
 }
-@keyframes button {
+.background-animation {
+  border: 3px solid rgb(14,95,242);
+  background: rgba(14,95,242,90%);
+  color: rgb(255,255,255);
+  animation: background 10s infinite alternate;
+}
+@keyframes background {
   0% {
     border-color: rgb(14,95,242);
     background: rgba(14,95,242,90%);
@@ -134,6 +146,7 @@ button {
 }
 .page {
   margin: 20px;
+  position: relative;
 }
 .page-title {
   height: 10%;
@@ -146,7 +159,7 @@ button {
   font-size: 4.75vw;
 }
 .page-content {
-  height: 80%;
+  height: 75%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -156,7 +169,10 @@ button {
   font-size: 1em;
 }
 .page-cta {
+  width: 100%;
   height: 10%;
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -165,5 +181,8 @@ button {
   max-width: 47.5%;
   max-height: 100%;
   padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div id="appMenu">
-    <button @click="home">Home</button>
-    <button @click="learnMore">Learn More</button>
-    <button @click="view">View on GitHub</button>
+    <button class="background-animation" @click="home">Home</button>
+    <button class="background-animation" @click="learnMore">Learn More</button>
+    <button class="background-animation" @click="view">View on GitHub</button>
   </div>
 </template>
 
@@ -45,8 +45,5 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgb(14,95,242);
-  border-color: rgb(255,255,255);
-  color: rgb(255,255,255);
 }
 </style>
