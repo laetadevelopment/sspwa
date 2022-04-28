@@ -57,10 +57,16 @@ export default {
       if (page == 'home') {
         this.showLearnMore = false;
         this.showHome = true;
+        if (this.showAppMenu) {
+          this.showAppMenu = false;
+        }
       }
       if (page == 'learnMore') {
         this.showHome = false;
         this.showLearnMore = true;
+        if (this.showAppMenu) {
+          this.showAppMenu = false;
+        }
       }
     }
   }
