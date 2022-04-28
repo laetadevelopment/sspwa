@@ -74,6 +74,7 @@ header #logo {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   left: 50%;
   top: 50%;
