@@ -2,7 +2,6 @@
   <div id="index">
     <appHeader @load="load" @toggle="toggle" />
     <main>
-      <!-- load app views -->
       <home v-if="showHome" @load="load" />
       <learnMore v-if="showLearnMore" @load="load" @toggle="toggle" />
     </main>
@@ -15,6 +14,7 @@
 <script>
 import appHeader from './appHeader.vue'
 import home from './views/home.vue'
+// import app views to load in main element
 import learnMore from './views/learnMore.vue'
 import appFooter from './appFooter.vue'
 import appMenu from './appMenu.vue'
@@ -184,24 +184,28 @@ button {
   overflow: hidden;
 }
 .page-title {
-  margin-bottom: 10px;
+  height: 12.5%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .page-title h1 {
   margin: 0;
   font-size: 4.75vw;
 }
 .page-content {
+  height: 75%;
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
 }
 .page-content h2 {
   font-size: 1em;
 }
 .page-cta {
   width: 100%;
-  height: 10%;
+  height: 12.5%;
   position: absolute;
   bottom: 0;
   display: flex;
