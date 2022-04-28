@@ -51,9 +51,9 @@ Please reach out directly through GitHub with any questions, comments, or bug re
 
 ##### v1.1.1 - add content for project template
 
-##### v1.1.2 - style content for project template
+##### v1.1.2 - add basic styling to content for project template
 
-##### v1.1.3 - create remaining style rules for main component
+##### v1.1.3 - add brand styling and interactiveness to content
 
 #### v1.2 - Phase Two
 
