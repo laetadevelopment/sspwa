@@ -105,6 +105,7 @@ button {
   border: 3px solid black;
   border-radius: 10px;
   background: transparent;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   cursor: pointer;
 }
