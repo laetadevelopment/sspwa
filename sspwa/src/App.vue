@@ -26,8 +26,8 @@ body {
   margin: 0;
 }
 #app {
-  width:  100%;
-  height:  100%;
+  width:  100% !important;
+  height:  100% !important;
   overflow: hidden !important;
   background: #0E5FF2;
 }

@@ -1,15 +1,13 @@
 <template>
   <header>
-    <div id="menuButtons">
-      <button v-if="!showAppMenu" @click="showMenu">Show Menu</button>
-      <button v-if="showAppMenu" @click="hideMenu">Hide Menu</button>
+    <div id="menuButton">
+      <button @click="toggleAppMenu">Show Menu</button>
     </div>
     <div id="logo">
       <img @click="home" alt="SSPWA logo" src="../../assets/logo.png">
     </div>
-    <div id="appBarButtons">
-      <button v-if="!showAppBar" @click="showBar">Show App Bar</button>
-      <button v-if="showAppBar" @click="hideBar">Hide App Bar</button>
+    <div id="appBarButton">
+      <button @click="toggleAppBar">Show App Bar</button>
     </div>
   </header>
 </template>
@@ -17,30 +15,14 @@
 <script>
 export default {
   name: 'appHeader',
-  data() {
-    return {
-      showAppMenu: false,
-      showAppBar: false
-    }
-  },
   methods: {
-    showMenu() {
-      this.showAppMenu = true;
-      this.$emit("toggle", "appMenu");
-    },
-    hideMenu() {
-      this.showAppMenu = false;
+    toggleAppMenu() {
       this.$emit("toggle", "appMenu");
     },
     home() {
       this.$emit("load", "home");
     },
-    showBar() {
-      this.showAppBar = true;
-      this.$emit("toggle", "appBar");
-    },
-    hideBar() {
-      this.showAppBar = false;
+    toggleAppBar() {
       this.$emit("toggle", "appBar");
     }
   }
@@ -48,9 +30,57 @@ export default {
 </script>
 
 <style scoped>
-header #logo img {
-  max-width: 10%;
-  max-height: 10%;
+header {
+  width: 100% !important;
+  height:  15% !important;
+  overflow: hidden !important;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#menuButton {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#menuButton button {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  border-radius: 10px;
+  background: #0E5FF2;
+}
+header #logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   cursor: pointer;
+}
+header #logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#appBarButton {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#appBarButton button {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  border-radius: 10px;
+  background: #0E5FF2;
 }
 </style>
