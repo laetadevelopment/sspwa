@@ -4,11 +4,9 @@
       <h1>Learn More About SSPWA</h1>
     </div>
     <div class="page-content">
-      <p>SSPWA (Single Screen Progressive Web App) is a MIT-licensed open source project built with the Vue.js Progressive JavaScript Framework. A good movie experience feels the same on an old, square TV as it does on a new, widescreen TV that has the same screen size. The modern screen may provide an enhanced experience, but you do not loose the quality of the movie in terms of storyline and performance of the actors. A SSPWA will provide a similar experience where the actors in a movie can be compared to the elements on the screen of the app. The app will feel the same regardless of what device you open the app with.</p>
       <p>To add to the movie experience a SSPWA will allow you to interact with the elements on the screen. When you watch a movie you do not interact with the actors. That would make the experience dynamic and more like a video game. The SSPWA template aims to give you a foundation to build highly interactive app experiences that your users can load and use on any of their devices in a moments notice.</p>
       <p>Unlike a traditional PWA (Progressive Web App) or web application in general, the elements on the screen will never exist outside of the screen view. This makes a modern, component based framework like Vue.js ideal to build and manage your SSPWAs. End the endless scrolling of apps and websites today and build the ultimate movie/game/app hybrid of the future!</p>
       <p>Please reach out directly through GitHub with any questions, comments, or bug reports.</p>
-      <p>Documentation and more info for the SSPWA Template is coming soon!</p>
     </div>
     <div class="page-cta">
       <button @click="view" class="bottom-left">View on GitHub</button>

@@ -1,15 +1,15 @@
 <template>
   <header>
     <div id="menuButtons">
-      <button style="background: #FF9777;" v-if="!showAppMenu" @click="showMenu">Show Menu</button>
-      <button style="background: #007AC7;" v-if="showAppMenu" @click="hideMenu">Hide Menu</button>
+      <button style="background: #0E5FF2;" v-if="!showAppMenu" @click="showMenu">Show Menu</button>
+      <button style="background: #FF9777;" v-if="showAppMenu" @click="hideMenu">Hide Menu</button>
     </div>
     <div id="logo">
       <img @click="home" alt="SSPWA logo" src="../../assets/logo.png">
     </div>
     <div id="appBarButtons">
-      <button style="background: #FF9777;" v-if="!showAppBar" @click="showBar">Show App Bar</button>
-      <button style="background: #007AC7;" v-if="showAppBar" @click="hideBar">Hide App Bar</button>
+      <button style="background: #0E5FF2;" v-if="!showAppBar" @click="showBar">Show App Bar</button>
+      <button style="background: #FF9777;" v-if="showAppBar" @click="hideBar">Hide App Bar</button>
     </div>
   </header>
 </template>
