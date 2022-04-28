@@ -87,10 +87,6 @@ main {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.page {
-  padding: 20px;
-  padding-top: 0;
-}
 .page-title {
   height: 10%;
   display: flex;
@@ -123,12 +119,13 @@ main {
 }
 .page-cta button {
   width: 150px;
+  max-width: 47.5%;
   height: 50px;
   max-height: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
 }
 </style>

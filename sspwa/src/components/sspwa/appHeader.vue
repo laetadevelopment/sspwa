@@ -35,21 +35,19 @@ header {
   height:  15% !important;
   overflow: hidden !important;
   position: relative;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 #menuButton {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 0;
+  top: 0;
 }
 #menuButton button {
   width: 100%;
   height: 100%;
   font-size: 0;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #0E5FF2;
 }
 header #logo {
@@ -73,14 +71,14 @@ header #logo img {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 0;
+  top: 0;
 }
 #appBarButton button {
   width: 100%;
   height: 100%;
   font-size: 0;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #0E5FF2;
 }
 </style>
