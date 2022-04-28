@@ -50,7 +50,7 @@ export default {
 <style scoped>
 header {
   width: 100% !important;
-  height:  20% !important;
+  height:  15% !important;
   overflow: hidden !important;
   position: relative;
   border-top-left-radius: 15px;
@@ -72,6 +72,8 @@ header {
 header #logo {
   width: 20%;
   height: 100%;
+  display: flex;
+  align-items: center;
   position: absolute;
   left: 50%;
   top: 50%;

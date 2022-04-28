@@ -29,7 +29,7 @@ export default {
 <style scoped>
 #appMenu {
   width: 100%;
-  height: 80%;
+  height: 85%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

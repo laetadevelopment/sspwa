@@ -75,7 +75,7 @@ export default {
 }
 main {
   width: 100% !important;
-  height: 80% !important;
+  height: 85% !important;
   overflow: hidden !important;
   display: flex;
   border-bottom-left-radius: 15px;
@@ -83,21 +83,31 @@ main {
 }
 .page {
   padding: 20px;
+  padding-top: 0;
 }
 .page-title {
+  height: 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.page-title h1 {
+  margin: 0;
 }
 .page-content {
+  height: 80%;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
 }
 .page-cta {
+  height: 10%;
   display: flex;
   justify-content: space-between;
 }
 .page-cta button {
   display: inline-flex;
   align-items: center;
+  margin-top: 20px;
 }
 </style>
