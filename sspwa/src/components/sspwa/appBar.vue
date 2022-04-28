@@ -31,7 +31,7 @@ export default {
   bottom: 0;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgba(62, 140, 132, 50%);
+  background: rgba(62, 140, 132, 75%);
 }
 #appBar span {
   display: inline-flex;
