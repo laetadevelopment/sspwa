@@ -101,10 +101,12 @@ p {
   margin-bottom: 10px;
 }
 button {
+  width: 150px;
   border: 3px solid black;
   border-radius: 10px;
   background: transparent;
   font-weight: bold;
+  cursor: pointer;
 }
 .page {
   margin: 20px;
@@ -136,7 +138,6 @@ button {
   align-items: flex-end;
 }
 .page-cta button {
-  width: 150px;
   max-width: 47.5%;
   max-height: 100%;
   padding: 10px 15px;

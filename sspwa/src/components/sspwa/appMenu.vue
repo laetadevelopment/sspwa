@@ -41,7 +41,7 @@ export default {
 }
 #appMenu button {
   height: 50px;
-  width: 100px;
+  max-width: 30%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
