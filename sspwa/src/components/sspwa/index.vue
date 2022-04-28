@@ -179,17 +179,16 @@ button {
   position: relative;
 }
 .page-title {
-  height: 10%;
+  height: 7.5%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .page-title h1 {
   margin: 0;
   font-size: 4.75vw;
 }
 .page-content {
-  height: 77.5%;
+  height: 80%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
