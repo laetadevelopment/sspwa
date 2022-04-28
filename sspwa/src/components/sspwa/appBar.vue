@@ -31,8 +31,8 @@ export default {
   align-items: center;
   position: absolute;
   bottom: 0;
-  background: rgba(14, 95, 242, 90%);
-  border-top: 2px solid rgb(14, 95, 242);
+  background: rgba(14,95,242,90%);
+  border-top: 2px solid rgb(14,95,242);
   box-sizing: border-box;
 }
 #appBar span {

@@ -35,8 +35,8 @@ export default {
   align-items: center;
   position: absolute;
   bottom: 10%;
-  background: rgba(0, 0, 0, 90%);
-  border-top: 2px solid rgb(0, 0, 0);
+  background: rgba(0,0,0,90%);
+  border-top: 2px solid rgb(0,0,0);
   box-sizing: border-box;
 }
 #appMenu button {
@@ -45,8 +45,8 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgb(14, 95, 242);
-  border-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  background: rgb(14,95,242);
+  border-color: rgb(255,255,255);
+  color: rgb(255,255,255);
 }
 </style>

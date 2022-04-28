@@ -102,12 +102,35 @@ p {
 }
 button {
   width: 150px;
-  border: 3px solid black;
-  border-radius: 10px;
+  border: 3px solid rgb(14,95,242);
+  border-radius: 5px;
   background: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(255,255,255);
   font-weight: bold;
   cursor: pointer;
+  animation: button 10s infinite alternate;
+}
+@keyframes button {
+  0% {
+    border-color: rgb(14,95,242);
+    background: rgba(14,95,242,90%);
+  }
+  25% {
+    border-color: rgb(255,151,119);
+    background: rgba(255,151,119,90%);
+  }
+  50% {
+    border-color: rgb(186,220,221);
+    background: rgba(186,220,221,90%);
+  }
+  75% {
+    border-color: rgb(92,158,167);
+    background: rgba(92,158,167,90%);
+  }
+  100% {
+    border-color: rgb(62,140,132);
+    background: rgba(62,140,132,90%);
+  }
 }
 .page {
   margin: 20px;
@@ -142,9 +165,5 @@ button {
   max-width: 47.5%;
   max-height: 100%;
   padding: 10px 15px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 </style>
