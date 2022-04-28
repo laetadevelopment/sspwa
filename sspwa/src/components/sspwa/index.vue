@@ -99,6 +99,7 @@ main {
 }
 .page-title h1 {
   margin: 0;
+  font-size: 5vw;
 }
 .page-content {
   height: 80%;
@@ -106,6 +107,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+.page-content h2 {
+  font-size: 3vw;
+}
+.page-content p {
+  font-size: 2vw;
 }
 .page-cta {
   height: 10%;
@@ -116,5 +123,6 @@ main {
   display: inline-flex;
   align-items: center;
   margin-top: 20px;
+  border-radius: 5px;
 }
 </style>

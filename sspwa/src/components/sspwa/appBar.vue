@@ -25,6 +25,7 @@ export default {
 #appBar {
   width: 100%;
   height: 10%;
+  min-height: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -32,7 +33,7 @@ export default {
   bottom: 0;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgba(62, 140, 132, 50%);
+  background: rgba(14, 95, 242, 75%);
 }
 #appBar span {
   display: inline-flex;

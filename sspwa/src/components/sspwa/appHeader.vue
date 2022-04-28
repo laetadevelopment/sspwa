@@ -33,14 +33,15 @@ export default {
 header {
   width: 100% !important;
   height:  15% !important;
+  min-height: 80px;
   overflow: hidden !important;
   position: relative;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 #menuButton {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 20px;
   top: 20px;
@@ -70,8 +71,8 @@ header #logo img {
   max-height: 100%;
 }
 #appBarButton {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   right: 20px;
   top: 20px;
