@@ -203,6 +203,9 @@ button {
   overflow: hidden;
 }
 .page-content h2 {
+  font-size: 1.1em;
+}
+.page-content p {
   font-size: 1em;
 }
 .page-cta {

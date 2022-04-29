@@ -66,11 +66,13 @@ header #logo {
   left: 50%;
   top: 5px;
   transform: translate(-50%, 0%);
+  display: flex;
   cursor: pointer;
 }
 header #logo img {
+  min-width: 40px;
   max-width: 100%;
-  max-height: 100%;
+  min-height: 40px;
 }
 #appBarButton {
   width: 40px;
