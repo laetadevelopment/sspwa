@@ -1,13 +1,17 @@
 <template>
   <header>
     <div id="menuButton">
-      <button @click="toggleAppMenu">Show Menu</button>
+      <button class="background-animation" @click="toggleAppMenu">
+        <img alt="Toggle Menu" src="../../assets/ss-icon.svg">
+      </button>
     </div>
     <div id="logo">
-      <img @click="home" alt="SSPWA logo" src="../../assets/logo.png">
+      <img @click="home" alt="SSPWA logo" src="../../assets/sspwa-logo.svg">
     </div>
     <div id="appBarButton">
-      <button @click="toggleAppBar">Show App Bar</button>
+      <button class="background-animation" @click="toggleAppBar">
+        <img alt="Toggle App Bar" src="../../assets/github-mark.svg">
+      </button>
     </div>
   </header>
 </template>
@@ -31,54 +35,50 @@ export default {
 
 <style scoped>
 header {
-  width: 100% !important;
-  height:  15% !important;
-  overflow: hidden !important;
+  width: 100%;
+  height:  15%;
   position: relative;
 }
 #menuButton {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 10px;
 }
-#menuButton button {
+header button {
   width: 100%;
   height: 100%;
-  font-size: 0;
-  border-radius: 15px;
-  background: #0E5FF2;
-}
-header #logo {
-  width: 20%;
-  height: 100%;
+  padding: 0;
+  border-radius: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+header button img {
+  width: 25px;
+  height: 25px;
+}
+/* TODO: animate fill of SVG */
+header #logo {
+  height: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 5px;
+  transform: translate(-50%, 0%);
+  display: flex;
   cursor: pointer;
 }
 header #logo img {
+  min-width: 40px;
   max-width: 100%;
-  max-height: 100%;
+  min-height: 40px;
 }
 #appBarButton {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 0;
-  top: 0;
-}
-#appBarButton button {
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-  border-radius: 15px;
-  background: #0E5FF2;
+  right: 10px;
+  top: 10px;
 }
 </style>

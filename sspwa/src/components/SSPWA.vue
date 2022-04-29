@@ -1,13 +1,13 @@
 <template>
   <div id="sspwa">
-    <div id="content">
-      <div id="viewable">
-        <div v-if="showInstall" id="intro">
-          <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.png">
-          <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.png">
-        </div>
-        <index v-if="loadIndex" />
+    <div id="viewable">
+      <div v-if="showInstall" id="intro">
+        <h2 v-if="installApp">Install SSPWA</h2>
+        <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/sspwa-logo-intro.svg">
+        <h2 v-if="!installApp">Load SSPWA</h2>
+        <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/sspwa-logo-intro.svg">
       </div>
+      <index v-if="loadIndex" />
     </div>
   </div>
 </template>
@@ -53,17 +53,22 @@ export default {
   width: 100%;
   height: 100%;
 }
-#content {
-  width: 100%;
-  height: 100%;
-  border: 20px solid transparent;
-  box-sizing: border-box;
-}
 #viewable {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 15px;
+}
+#intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgb(14,95,242);
+}
+#intro h2 {
+  margin-top: 5%;
+  color: rgb(255,255,255);
 }
 #intro #logo {
   max-width: 50%;
