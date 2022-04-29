@@ -39,6 +39,7 @@ export default {
     }
   },
   methods: {
+    // TODO: refactor component toggle logic and make experience more interactive
     toggle(component) {
       if (component == 'appMenu') {
         if (!this.showAppMenu) {
@@ -55,7 +56,7 @@ export default {
         }
       }
     },
-    // TODO: refactor page loading logic
+    // TODO: refactor page loading logic and make experience more interactive
     load(page) {
       if (page == 'home') {
         this.showLearnMore = false;
