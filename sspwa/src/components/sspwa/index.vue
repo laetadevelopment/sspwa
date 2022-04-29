@@ -111,6 +111,7 @@ a {
 a:hover {
   color: rgba(14,95,242,75%);
 }
+/* TODO: add icons to the navigation buttons */
 button {
   width: 150px;
   border-radius: 10px;
