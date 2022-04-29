@@ -1,8 +1,8 @@
 <template>
   <div id="appMenu">
-    <button class="background-animation" @click="home">Home</button>
-    <button class="background-animation" @click="learnMore">Learn More</button>
-    <button class="background-animation" @click="view">View on GitHub</button>
+    <button @click="home">Home</button>
+    <button @click="learnMore">Learn More</button>
+    <button @click="view">View on GitHub</button>
   </div>
 </template>
 
@@ -29,21 +29,22 @@ export default {
 <style scoped>
 #appMenu {
   width: 100%;
-  height: 75%;
+  height: 85%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  top: 15%;
-  background: rgba(0,0,0,90%);
-  border-top: 2px solid rgb(0,0,0);
-  box-sizing: border-box;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgba(0, 0, 0, 90%);
 }
 #appMenu button {
   height: 50px;
-  max-width: 30%;
+  width: 100px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 </style>
