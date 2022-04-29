@@ -68,3 +68,7 @@ Please reach out directly through GitHub with any questions, comments, or bug re
 ##### v1.3.1 - add scaffolding for notifications
 
 ##### v1.3.2 - create UI/UX for notifications
+
+##### v1.3.3 - add scaffolding for playing video in app
+
+##### v1.3.4 - create UI/UX for video
