@@ -29,13 +29,13 @@ Please reach out directly through GitHub with any questions, comments, or bug re
 
 #### v0.0 - Phase Zero
 
-##### v0.0.1 - create new repo for project
+##### ~~v0.0.1 - create new repo for project~~
 
 #### v0.1 - Phase One
 
-##### v0.1.1 - create new Vue PWA project
+##### ~~v0.1.1 - create new Vue PWA project~~
 
-##### v0.1.2 - remove all defaults from project
+##### ~~v0.1.2 - remove all defaults from project~~
 
 
 ### Version One
@@ -43,17 +43,17 @@ Please reach out directly through GitHub with any questions, comments, or bug re
 
 #### v1.0 - Phase Zero
 
-##### v1.0.1 - add project assets
+##### ~~v1.0.1 - add project assets~~
 
-##### v1.0.2 - create project scaffolding
+##### ~~v1.0.2 - create project scaffolding~~
 
 #### v1.1 - Phase One
 
-##### v1.1.1 - add content for project template
+##### ~~v1.1.1 - add content for project template~~
 
-##### v1.1.2 - add basic styling to content for project template
+##### ~~v1.1.2 - add basic styling to content for project template~~
 
-##### v1.1.3 - add brand styling and interactiveness to content
+##### ~~v1.1.3 - add brand styling and interactiveness to content~~
 
 #### v1.2 - Phase Two
 
