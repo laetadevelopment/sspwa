@@ -2,10 +2,10 @@
   <div id="sspwa">
     <div id="viewable">
       <div v-if="showInstall" id="intro">
-        <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
         <h2 v-if="installApp">Install SSPWA</h2>
-        <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/logo.svg">
+        <img v-if="installApp" @click="install" id="logo" alt="SSPWA logo" src="../assets/sspwa-logo-intro.svg">
         <h2 v-if="!installApp">Load SSPWA</h2>
+        <img v-if="!installApp" @click="load" id="logo" alt="SSPWA logo" src="../assets/sspwa-logo-intro.svg">
       </div>
       <index v-if="loadIndex" />
     </div>
@@ -63,7 +63,12 @@ export default {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
+  background: rgb(14,95,242);
+}
+#intro h2 {
+  margin-top: 5%;
+  color: rgb(255,255,255);
 }
 #intro #logo {
   max-width: 50%;
