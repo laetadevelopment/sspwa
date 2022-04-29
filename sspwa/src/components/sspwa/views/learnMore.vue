@@ -26,10 +26,28 @@ export default {
   methods: {
     overflow() {
       if (this.$refs.title.scrollHeight > this.$refs.title.clientHeight) {
-        this.$refs.title.style.fontSize = "3vw";
+        this.$refs.title.style.fontSize = "4vw";
+        if (this.$refs.title.scrollHeight > this.$refs.title.clientHeight) {
+          this.$refs.title.style.fontSize = "3vw";
+          if (this.$refs.title.scrollHeight > this.$refs.title.clientHeight) {
+            this.$refs.title.style.fontSize = "2vw";
+            if (this.$refs.title.scrollHeight > this.$refs.title.clientHeight) {
+              this.$refs.title.style.fontSize = "1vw";
+            }
+          }
+        }
       }
       if (this.$refs.content.scrollHeight > this.$refs.content.clientHeight) {
         this.$refs.content.style.fontSize = ".8em";
+        if (this.$refs.content.scrollHeight > this.$refs.content.clientHeight) {
+          this.$refs.content.style.fontSize = ".7em";
+          if (this.$refs.content.scrollHeight > this.$refs.content.clientHeight) {
+            this.$refs.content.style.fontSize = ".6em";
+            if (this.$refs.content.scrollHeight > this.$refs.content.clientHeight) {
+              this.$refs.content.style.fontSize = ".5em";
+            }
+          }
+        }
       }
     },
     view() {
@@ -40,8 +58,8 @@ export default {
     }
   },
   mounted() {
-    // fire function when screen size is changed as well
     this.overflow();
+    window.addEventListener("resize", this.overflow);
   }
 }
 </script>
