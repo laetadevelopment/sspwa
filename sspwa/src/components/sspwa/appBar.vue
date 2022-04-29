@@ -25,15 +25,15 @@ export default {
 #appBar {
   width: 100%;
   height: 10%;
-  min-height: 70px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
   bottom: 0;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: rgba(14, 95, 242, 75%);
+  background: rgba(14,95,242,95%);
+  border-top: 2px solid rgb(14,95,242);
+  box-sizing: border-box;
+  z-index: 2;
 }
 #appBar span {
   display: inline-flex;
