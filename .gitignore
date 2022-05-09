@@ -142,6 +142,3 @@ dist
 
 # Deployment files
 .firebase/
-firebase.json
-.firebaserc
-.github/
