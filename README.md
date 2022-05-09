@@ -57,7 +57,7 @@ Please reach out directly through GitHub with any questions, comments, or bug re
 
 #### v1.2 - Phase Two
 
-##### v1.2.1 - create CI/CD pipeline for project
+##### ~~v1.2.1 - create CI/CD pipeline for project~~
 
 ##### v1.2.2 - create test cases for project
 
