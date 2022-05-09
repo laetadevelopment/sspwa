@@ -1,7 +1,7 @@
 {
   "name": "SSPWA",
   "short_name": "SSPWA",
-  "description": "A progressive web app experience that feels like interacting with a movie.",
+  "description": "The mission of the SSPWA (Single Screen Progressive Web App) Template is to create a progressive web app experience that feels like interacting with a movie.",
   "background_color": "#0E5FF2",
   "theme_color": "#0E5FF2",
   "icons": [
